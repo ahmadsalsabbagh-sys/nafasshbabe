@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نَفَس شبابي | Youth to Youth</title>
+    <!-- خط Cairo من جوجل -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ملف التنسيق -->
+    <link rel="stylesheet" href="style.css">
+    <!-- مكتبة للحركة عند السكرول -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <!-- الخلفية التفاعلية 3D -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- الشريط المتحرك (مثبت في الأعلى) -->
+    <div class="marquee-bar">
+        <div class="track">
+            <div class="content">
+                Youth to Youth – من الشباب للشباب • نتعلّم سوا • نشارك خبراتنا • نكبر مع بعض • دعم حقيقي • معرفة من القلب • فرص تدريب • مساحة آمنة • شباب يدرّب شباب • 
+                Youth to Youth – من الشباب للشباب • نتعلّم سوا • نشارك خبراتنا • نكبر مع بعض • دعم حقيقي • معرفة من القلب • فرص تدريب • مساحة آمنة • شباب يدرّب شباب •
+            </div>
+        </div>
+    </div>
+
+    <!-- القائمة العلوية -->
+    <nav class="navbar glass-effect">
+        <div class="container nav-container">
+            <div class="logo">نَفَس شبابي</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#why">ليش نَفَس؟</a></li>
+                <li><a href="#about">عن المبادرة</a></li>
+                <li><a href="#achievements">الإنجازات</a></li>
+                <li><a href="#skills">المهارات</a></li>
+                <li><a href="#founder">المؤسس</a></li>
+                <li><a href="#contact" class="btn-main">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي (Home) -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="badge">مبادرة نَفس شبابي | Youth to Youth</span>
+                <h1>من الشباب... <br><span>للشباب</span></h1>
+                <p>مساحة آمنة لنكبر سوا، نتعلّم، ونشارك.</p>
+                
+                <!-- العبارات العائمة -->
+                <div class="floating-phrases">
+                    <span class="float-tag f1">مش لحالك.. إحنا معك</span>
+                    <span class="float-tag f2">تجربتك بتفرق</span>
+                    <span class="float-tag f3">صوتك مهم</span>
+                    <span class="float-tag f4">المعرفة أقوى لما نشاركها</span>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="#contact" class="btn-primary">انضم إلينا</a>
+                    <a href="#about" class="btn-secondary">اكتشف المزيد</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <div class="img-wrapper glass-card">
+                    <img src="https://www2.0zz0.com/2025/12/14/22/566871463.jpeg" alt="نَفَس شبابي">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم ليش نَفَس شبابي؟ -->
+    <section id="why" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>ليش نَفَس شبابي؟</h2>
+                <p>لأننا بنؤمن إن أقوى معرفة هي اللي بتيجي من تجربة شاب لشاب. هون، كل واحد فينا ممكن يكون متعلّم… ومعلّم بنفس الوقت.</p>
+            </div>
+            
+            <div class="grid-4">
+                <div class="glass-card hover-lift">
+                    <div class="icon-box"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>شباب يقدّموا معرفة</h3>
+                </div>
+                <div class="glass-card hover-lift">
+                    <div class="icon-box"><i class="fas fa-user-graduate"></i></div>
+                    <h3>شباب يتعلّموا مهارات</h3>
+                </div>
+                <div class="glass-card hover-lift">
+                    <div class="icon-box"><i class="fas fa-comments"></i></div>
+                    <h3>تبادل خبرات</h3>
+                </div>
+                <div class="glass-card hover-lift">
+                    <div class="icon-box"><i class="fas fa-users"></i></div>
+                    <h3>نمو جماعي</h3>
+                </div>
+            </div>
+
+            <!-- عبارات تحفيزية إضافية -->
+            <div class="motivation-bar glass-card">
+                <span>نتعلّم، نغلط، ونرجع أقوى</span>
+                <span class="divider">|</span>
+                <span>نَفَس شبابي مساحة آمنة</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم نبذة ومن نحن -->
+    <section id="about" class="section-padding alt-bg">
+        <div class="container">
+            <div class="split-layout">
+                <div class="text-block">
+                    <h2>نبذة تعريفية</h2>
+                    <p>نَفس شبابي هي مبادرة شبابية تهدف إلى خلق مساحة آمنة وداعمة للشباب، حيث يمكنهم التشارك، التعلم، وتطوير مهاراتهم النفسية والاجتماعية والحياتية.</p>
+                    <p>نركز على:</p>
+                    <ul class="check-list">
+                        <li>تعزيز الصحة النفسية والمهارات الحياتية</li>
+                        <li>بناء شبكة دعم شبابية متفاعلة</li>
+                        <li>تنظيم ورشات متنوعة تجمع بين المعرفة والتفاعل</li>
+                    </ul>
+                </div>
+                <div class="card-block glass-card">
+                    <h3>من نحن؟</h3>
+                    <p>نحن نخلق مساحة آمنة وداعمة للشباب للتعبير عن أنفسهم.</p>
+                    <h4>ركائزنا الأساسية:</h4>
+                    <div class="pillars">
+                        <div class="pillar"><strong>دعم شبابي:</strong> بيئة آمنة للمشاركة</div>
+                        <div class="pillar"><strong>مجتمع شبابي:</strong> شبكة واسعة متفاعلة</div>
+                        <div class="pillar"><strong>تطوير مهارات:</strong> ورش تدريبية للذات</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ما الذي يميزنا -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>ما الذي يميزنا؟</h2>
+                <p>مبادرة تطوعية شبابية تلامس احتياجات الشباب مباشرة.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item glass-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p>نساعد الشباب ليكونوا مدربين بأنفسهم.</p>
+                </div>
+                <div class="feature-item glass-card">
+                    <i class="fas fa-star"></i>
+                    <p>ندعم الطلاب لمشاركة قصص نجاحهم.</p>
+                </div>
+                <div class="feature-item glass-card">
+                    <i class="fas fa-fingerprint"></i>
+                    <p>نحتضن التنوع، لكل شاب صوت فريد.</p>
+                </div>
+                <div class="feature-item glass-card">
+                    <i class="fas fa-people-carry"></i>
+                    <p>شبكة دعم قوية للمشاريع المجتمعية.</p>
+                </div>
+                <div class="feature-item glass-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>إلهام الشباب ليكونوا قادة المستقبل.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الإنجازات والمهارات -->
+    <section id="achievements" class="section-padding alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>الإنجازات والمهارات</h2>
+            </div>
+            
+            <!-- إحصائيات -->
+            <div class="stats-container">
+                <div class="stat-box glass-card">
+                    <span class="number" data-target="100">0</span>+
+                    <span class="label">ورشة تدريبية</span>
+                </div>
+                <div class="stat-box glass-card">
+                    <span class="number" data-target="500">0</span>+
+                    <span class="label">عضو في المجتمع</span>
+                </div>
+                <div class="stat-box glass-card">
+                    <span class="number" data-target="50">0</span>+
+                    <span class="label">شراكة استراتيجية</span>
+                </div>
+            </div>
+
+            <!-- شو عملنا لليوم (Timeline Style) -->
+            <h3 class="subsection-title">شو عملنا لليوم؟</h3>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content glass-card">
+                        <h3>ورشات توعوية</h3>
+                        <p>عن الصحة النفسية والمهارات الحياتية.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content glass-card">
+                        <h3>فعاليات متنوعة</h3>
+                        <p>تغذية، توعية، وذكاء عاطفي.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="content glass-card">
+                        <h3>شبكة دعم</h3>
+                        <p>بناء مجتمع عبر منصة "نحن".</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content glass-card">
+                        <h3>تدريبات تقنية</h3>
+                        <p>تصميم وإبداع.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="section-padding">
+        <div class="container text-center">
+            <h2>المهارات التي نطورها</h2>
+            <div class="tags-cloud">
+                <span>تواصل فعّال</span>
+                <span>إدارة فعاليات</span>
+                <span>تصميم العروض</span>
+                <span>هوية بصرية</span>
+                <span>صناعة محتوى</span>
+                <span>إرشاد نفسي</span>
+                <span>قيادة فرق</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- المؤسس -->
+    <section id="founder" class="section-padding founder-section">
+        <div class="container text-center">
+            <h2>المسؤول عن المبادرة</h2>
+            <div class="founder-card glass-card">
+                <div class="founder-image-wrapper" onclick="openModal()">
+                    <img src="https://www2.0zz0.com/2025/12/14/21/605861400.jpg" alt="أحمد الصباغ">
+                    <div class="click-hint"><i class="fas fa-info-circle"></i> اضغط هنا</div>
+                </div>
+                <h3>أحمد الصباغ</h3>
+                <p class="role">مرشد نفسي وتربوي | مؤسس المبادرة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- النافذة المنبثقة (Modal) -->
+    <div id="founderModal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <img src="https://www2.0zz0.com/2025/12/14/21/605861400.jpg" alt="أحمد الصباغ">
+                <div>
+                    <h3>أحمد الصباغ</h3>
+                    <p>مرشد نفسي وتربوي | مدرب</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>مرشد نفسي وتربوي مهتم بتمكين الشباب وتعزيز الوعي الذاتي والرفاه النفسي. بشوف إن كل شخص لديه القدرة يغيّر حياته لما يفهم نفسه ويعرف كيف يتعامل مع مشاعره وتفكيره.</p>
+                <p>أسست مبادرة نَفَس شبابي لتكون مساحة تجمع الشباب على التعلم، المشاركة، والدعم المتبادل، بعيد عن الأحكام وبأسلوب بسيط وقريب من الواقع.</p>
+                <p>إلى جانب المجال النفسي، عندي شغف كبير في التصميم والمجال التقني، وبحب أدمج التكنولوجيا مع التدريب والعمل المجتمعي.</p>
+                <div class="quote">"أنا مؤمن إن التغيير مش خطوة واحدة… هو رحلة مستمرة. بدأت من نفسي، وبحاول أساعد غيري يبدأ."</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- الأسئلة الشائعة -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center">الأسئلة الشائعة</h2>
+            <div class="faq-list">
+                <div class="faq-item glass-card">
+                    <div class="question">كيف يقدر الشباب يشارك مع نَفَس شبابي؟ <i class="fas fa-chevron-down"></i></div>
+                    <div class="answer">يمكنهم حضور الورش أونلاين أو المشاركة بالورش الوجاهية.</div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="question">كيف أقدر أكون متطوع أو مدرب؟ <i class="fas fa-chevron-down"></i></div>
+                    <div class="answer">تواصل معنا على: 0791036401</div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="question">هل الورش مجانية؟ <i class="fas fa-chevron-down"></i></div>
+                    <div class="answer">نعم، جميع ورشات نَفَس شبابي مجانية وتقدم بشكل تطوعي.</div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="question">وين بتعملوا تدريباتكم؟ <i class="fas fa-chevron-down"></i></div>
+                    <div class="answer">نقوم بالتدريبات أونلاين وجاهي لضمان تفاعل جميع المشاركين.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تواصل معنا -->
+    <footer id="contact" class="footer glass-effect">
+        <div class="container">
+            <h2>تواصل معي</h2>
+            <div class="contact-grid">
+                <a href="mailto:nafas.shababy9@gmail.com" class="contact-card glass-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>البريد الإلكتروني</span>
+                </a>
+                <a href="tel:0791036401" class="contact-card glass-card">
+                    <i class="fas fa-phone"></i>
+                    <span>0791036401</span>
+                </a>
+                <a href="https://instagram.com/nafas.shababi" target="_blank" class="contact-card glass-card">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://chat.whatsapp.com/KrQQPuoQnsQAiUxlcgVUb5" target="_blank" class="contact-card glass-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>مجموعة الواتساب</span>
+                </a>
+                <a href="https://www.nahno.org/ngo/75650" target="_blank" class="contact-card glass-card">
+                    <i class="fas fa-globe"></i>
+                    <span>منصة نحن</span>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>الموقع: Jordan - Amman</p>
+                <p>&copy; 2025 نَفَس شبابي | من الشباب للشباب</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
